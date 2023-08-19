@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image:url(images/bkground.png);
+    display: block;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 500px;
+}
+
+@font-face {
+    font-family: Art-Decoretta;
+    src: url(font/art_decoretta.ttf);
+    font-weight: 400;
+    font-style: regular;
+}
+
+.main-div {
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header,
+main,
+footer {
+    background-color: white;
+}
+
+main {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    list-style: none;
+    word-spacing: 14px;
+    text-align: justify;
+    text-align-last: justify;
+    line-height: 40px;
+}
+
+.main-nav li {
+    display: inline;
+}
+
+.amenu {
+    text-decoration: none;
+    color: black;
+    font-family: Art-Decoretta, serif;
+    font-size: 46px;
+}
+
+.anow {
+    text-decoration: none;
+    color: red;
+    font-family: Art-Decoretta, serif;
+    font-size: 46px;
+}
+
+.amenu:hover {
+    color: grey;
+}
+
+.visual {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.news-list {
+    list-style: none;
+}
+
+.poemlink {
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: underline;
+}
+
+span,
+time {
+    color: #cc0000;
+    font-size: 13px;
+}
+
+.news,
+.book {
+    display: inline-block;
+}
+
+.news {
+    width: 440px;
+    padding-left: 90px
+}
+
+.book a {
+    display: block;
+    text-align: center;
+}
+
+.book {
+    vertical-align: top;
+    padding-top: 16px;
+}
+
+.pmain {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    word-spacing: 5px;
+}
+
+.book p {
+    padding-top: 30px;
+    margin: 0;
+}
+
+.pmain:first-letter {
+    text-shadow: 1px 1px 1px #626262;
+    font-size: 35px;
+    color: #8d8d8d;
+}
+
+.ulbook {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer p {
+    display: inline-block;
+    padding-left: 20px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    word-spacing: 3px;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+@media screen and (min-device-width: 1300px) and (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%;
+    }
+}
+ 
+@media screen and (min-device-width: 1300px) and (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%;
+    }
+}
+ 
+@media screen and (max-device-width: 1300px) {
+    .fullscreen-bg {
+        background: url('images/bkground.png') center center / cover no-repeat;
+    }
+ 
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
